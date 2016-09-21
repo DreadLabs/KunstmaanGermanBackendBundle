@@ -1,0 +1,655 @@
+'Remember Me': Meine Anmeldedaten auf diesem Rechner speichern
+'Log In': Anmelden
+'Password:': Passwort
+'Password': Passwort
+'Username:': Benutzername
+'Username': Benutzername
+'Edit dashboard': Dashboard verwalten
+Search: Suche
+'We have sent you an email with a link to reset your password.': Es wurde eine E-Mail mit einem Link zum Zurücksetzen Ihres Passworts gesendet.
+'The password for this user has already been requested.': Es wurde bereits ein neues Passwort angefordert.
+'Username or email address:': Benutzername oder E-Mailadresse
+'Username or email address': Benutzername oder E-Mailadresse
+'The username or email address does not exist.': Der Benutzername oder die E-Mailadresse existiert nicht.
+'Reset password': Passwort zurücksetzen
+'Forgot my password.': Passwort vergessen?
+'Wrong password or email': Das Passwort oder die E-Mailadresse ist nicht korrekt.
+'Save': speichern
+'This list contains all the pages, chronologically ordered by updated date.': Hier werden alle Seiten, chronologisch sortiert nach Aktualisierungszeitpunkt, angezeigt.
+'Warning': Warnung
+'Error': Fehler
+'The form has not beensaved because there are validation errors': Das Formular konnte nicht vollständig validiert werden. Bitte überprüfen Sie Ihre Eingaben.
+'Add a pagepart': Block hinzufügen
+'Top': nach oben
+'Vote up': gefällt mir
+'Vote down': gefällt mir nicht
+'Vote registered': Die Bewertung wurde gespeichert.
+
+subaction:
+  versions: "Versionen"
+
+action:
+  saveasdraft: "Entwurf speichern"
+  recopyfromlanguage: "Inhalt von anderer Sprache kopieren"
+  publish: "veröffentlichen"
+  unpublish: "verbergen"
+  preview: "Vorschau"
+  save: "speichern"
+  delete: "löschen"
+  addsubpage: "Unterseite hinzufügen"
+  duplicate: "duplizieren"
+
+modal:
+  sourcelanguage: "Ausgangssprache"
+
+pages:
+  copynotavailable: "Bitte übersetzen Sie erst die übergeordnete Seite"
+
+kuma_node:
+  form:
+    controller_action:
+      title:
+        label:  Titel
+    menu_tab:
+      hidden_from_menu:
+        label:  im Menü verstecken
+      internal_name:
+        label:  interne Bezeichnung
+    menu_tab_translation:
+      slug:
+        label:  Slug
+      weight:
+        label:  Gewichtung
+        title:  Wird verwendet, um die Seiten zu sortieren.
+    page:
+      title:
+        label:  Navigationstitel
+      page_title:
+        label:  Seitentitel
+        info_text: Wird als Titel der Seite verwendet.
+
+  status:
+    "will_be_publish_at.%date%.raw":    Diese Seite wird am %date% veröffentlicht
+    "will_be_unpublish_at.%date%.raw":  Diese Seite wird am %date% verborgen
+
+    button:
+      schedulle_cancel: abbrechen
+
+    "offline_draft.%public_url%.raw":   offline / Entwurf (Zeige <a href="%public_url%">veröffentlichte Version</a>)
+    online_public.raw:                  online / veröffentlicht
+    offline.raw:                        offline
+    "go_to_draft_version.%url%.raw":    (Zeige <a href="%url%">Entwurf</a>)
+
+  admin:
+    publish:
+      flash:
+        success_published: Die Seite wurde veröffentlicht
+        success_scheduled: Die Veröffentlichung wurde eingeplant
+    unpublish:
+      flash:
+        success_unpublished: Die Seite wurde verborgen
+        success_scheduled: Das Verbergen der Seite wurde eingeplant
+    unschedule:
+      flash:
+        success: Die Zeitplanung wurde abgebrochen
+    delete:
+      flash:
+        success: Die Seite wurde gelöscht
+    duplicate:
+      flash:
+        success: Die Seite wurde dupliziert
+    revert:
+      flash:
+        success: Die Seiteninhalte wurden zurückgesetzt
+    edit:
+      flash:
+        success: Die Seite wurde bearbeitet
+    new_page:
+      title:
+        default: Neue Seite
+    list:
+      header:
+        title:      Titel
+        created_at: erstellt am
+        updated_at: aktualisiert am
+        online:     online
+      filter:
+        title:      Titel
+        created_at: erstellt am
+        updated_at: aktualisiert am
+        online:     online
+
+  tab:
+    properties:
+      title:  Eigenschaften
+    menu:
+      title:  Menü
+    permissions:
+      title:  Zugriffsrechte
+    searcher:
+      title:  Suche
+
+  modal:
+    add_homepage:
+      h: Homepage hinzufügen
+      form:
+        title:
+          label: Titel
+        type:
+          label: Typ
+        add:
+          label: hinzufügen
+        cancel:
+          label: abbrechen
+
+    unpublish:
+      title:          Verbergen
+      body:           Sind Sie sicher, dass Sie diese Seite verbergen möchten? Die Seite ist dann offline.
+      later:
+        label:      Verbergen der Seite planen
+        button:     speichern
+        cancel:     abbrechen
+      now:
+        button:     verbergen
+        cancel:     abbrechen
+
+    publish:
+      title:          Veröffentlichen
+      body:           Sind Sie sicher, dass Sie die Seite veröffentlichen möchten?
+      later:
+        label:      Veröffentlichung planen
+        button:     speichern
+        cancel:     abbrechen
+      now:
+        button:     veröffentlichen
+        cancel:     abbrechen
+    versions:
+      title:          Versionen
+      table:
+        type:       Typ
+        last_modified:  aktualisiert am
+        user:       Benutzer
+        actions:    Aktionen
+      actions:
+        preview:    Vorschau
+        revert:     zurücksetzen
+    add_subpage:
+      title:          Unterseite hinzufügen
+      label:
+        title:      Titel
+        type:       Typ
+      button:
+        add:        hinzufügen
+        cancel:     abbrechen
+    delete_page:
+      'title.%page%': Seite '%page%' löschen
+      'body.%page%':  Sind Sie sicher, dass Sie die Seite und alle Inhaltselemente löschen möchten?
+      button:
+        delete:     löschen
+        cancel:     abbrechen
+    duplicate_page:
+      'title.%page%': Seite '%page%' duplizierten
+      label:
+        new_title:  Neuer Titel
+      button:
+        duplicate:  duplizieren
+        cancel:     abbrechen
+    recopyfromlanguage:
+      button:
+        copy:   kopieren
+        cancel: abbrechen
+
+form:
+  button:
+    dropdown:
+      more: mehr
+    filter:
+      filter: filtern
+      clear: zurücksetzen
+
+  delete: Löschen
+  deletesure: Sind Sie sicher, dass Sie den Löschvorgang durchführen wollen?
+  edit: bearbeiten
+  add: hinzufügen
+  'add.%subject%': '%subject% hinzufügen'
+  save: speichern
+  publish: veröffentlichen
+  unpublish: verbergen
+  saveasdraft: Entwurf speichern
+  name: Name
+  type: Typ
+  error: Fehler
+  warning: Warnung
+  headsup: Achtung
+  permissions: Rechte
+  properties: Eigenschaften
+  createdat: erstellt am
+  updatedat: aktualisiert am
+  actions: Aktionen
+  addfilter: Filter hinzufügen
+  choosetypefilter: Filter wählen
+  versions: Versionen
+  cancel: abbrechen
+
+  forgot:
+    password: Passwort vergessen?
+
+kuma_pagepart:
+  tab:
+    content:
+      title: Inhalt
+
+  modal:
+    delete:
+      'title.%type%': "Seiteninhalt '%type%' löschen"
+      'text.%type%': Der Seiteninhalt wird erst gelöscht, wenn Sie die Seite speichern.
+      button:
+        delete: löschen
+        cancel: abbrechen
+
+  select:
+    add: Block hinzufügen
+
+  template:
+    modal:
+      change:
+        current: Aktuell
+        title: Vorlage ändern
+        button:
+          open: Vorlage ändern
+          change: ändern
+          cancel: abbrechen
+        message:
+          'no_adin_found.%name%': 'Für %name% wurde kein Administrator gefunden'
+
+pagepart:
+  buttons:
+    resize: auf-/zuklappen
+    move_down: nach unten verschieben
+    move_up: nach oben verschieben
+    edit: bearbeiten
+    delete: löschen
+
+kuma_js:
+  auto_collapse:
+    more_button_label: mehr
+
+seo:
+  tab:
+    seo:
+      title: SEO-Einstellungen
+    social:
+      title: Social Graph-Einstellungen
+
+  pagetabs:
+    opengraph: Open Graph
+    twittercards: Twitter Card
+
+  action:
+    save: speichern
+    cancel: abbrechen
+    preview: Vorschau
+
+  form:
+    seo:
+      meta_title:
+        label: Meta-Titel
+        info_text: Meta-Titel. Verwendung hängt von den Einstellungen der Website ab.
+      meta_description:
+        label: Meta-Beschreibung
+      meta_robots:
+        label: Meta-Robots
+      extra_metadata:
+        label: Extra Meta-Daten
+
+    og:
+      title: Titel
+      description: Beschreibung
+      url: URL
+      type: Typ
+      image: Bild
+
+    twitter:
+      title: Titel
+      title_info_text: Titel der Seite in der Twitter Card
+      description: Beschreibung
+      description_info_text: Beschreibung der Seite in der Twitter Card
+      sitehandle: Twitter-Handle der Site
+      sitehandle_info_text: Geben Sie hier den @-Twitter-Handle der Seite an
+      creatorhandle: Twitter-Handle des Autors
+      creatorhandle_info_text: Geben Sie hier den @-Twitter-Handle des Autors an
+      image: Bild
+
+  robots:
+    tip: "Tipp:"
+    warning: "Dies ist ein Standardwert / Beispiel. Es wurde noch keine benutzerdefinierte robot.txt erstellt."
+    moreinfo: "Erhalten Sie mehr Informationen in unserem Cookbook:"
+    noindex: nicht in Index aufnehmen
+    nofollow: Links nicht verfolgen
+    noarchive: nicht in den Cache aufnehmen
+    nosnippet: Snippet / Ausschnit nicht anzeigen
+    notranslate: keine Übersetzung anbieten
+    noimageindex: Bilder nicht in den Index aufnehmen
+
+region:
+  button:
+    max: aufklappen
+    min: zuklappen
+
+media:
+  adminlist:
+    configurator:
+      name: Name
+      type: Typ
+      date: Datum
+      filesize: Dateigröße
+
+  folder:
+    empty:
+      action: Verzeichnis leeren
+      modal:
+          title: Verzeichnis leeren
+          text: Sind Sie sicher, dass Sie den Inhalt des Ordners "%folder%" löschen möchten?
+          checkbox: Unterordner ebenfalls löschen
+          save: Verzeichnis leeren
+      success:
+          text: Der Ordner '%folder%' wurde geleert.
+
+    sortby: sortieren nach
+
+    addsub:
+      action: Unterverzeichnis erstellen
+      action_short: erstellen
+      modal:
+        title: Unterverzeichnis erstellen
+        save: erstellen
+      form:
+        name: Ordnername
+        rel: Typ
+        parent: übergeordneter Ordner
+        internal_name: interne Bezeichnung
+
+    delete:
+      action: Verzeichnis löschen
+      action_short: löschen
+      modal:
+        title: Verzeichnis löschen
+        text: Soll das Verzeichnis "%folder%" wirklich gelöscht werden?
+
+    save: speichern
+
+    contenttab:
+      title: Inhalt
+    propertiestab:
+      title: Eigenschaften
+
+  bulkupload:
+    upload: Upload
+    bulkupload: Massen-Upload
+    select_files: Dateien auswählen
+    upload_more: Upload weiterer Dateien
+    back_to_folder: zurück zum Verzeichnis
+    upload_finished: Upload abgeschlossen.
+    not_available: Der Massen-Upload ist nicht verfügbar. Ihr Browser unterstützt kein Flash, Silverlight oder HTML5.
+
+
+  file:
+    add: Datei hinzufügen
+    modal:
+      title: Datei hinzufügen
+      save: hinzufügen
+  slide:
+    add: Folie hinzufügen
+    modal:
+      title: Folie hinzufügen
+      save: hinzufügen
+  video:
+    add: Video hinzufügen
+    modal:
+      title: Video hinzufügen
+      save: hinzufügen
+  audio:
+    add: Audiodatei hinzufügen
+    modal:
+      title: Audio hinzufügen
+      save: hinzufügen
+
+  media:
+    add:
+      action: Datei hinzufügen
+
+    dnd:
+      tip: "Tipp:"
+      tiptext: Wussten Sie, dass Sie per Drag'n'Drop in dieses Fenster mehrere Dateien hochladen können?
+      alert:
+        title: Drag'n'Drop Upload
+        text: Dateien in diesem Ordner ablegen
+
+  form:
+    file:
+      name:
+        label: Bezeichnung
+      file:
+        label: Datei
+      copyright:
+        label: Copyright
+      description:
+        label: Beschreibung
+
+  widget:
+    media_chooser: Datei auswählen
+    choose: auswählen
+    delete: löschen
+
+kuma_user:
+  roles:
+    add:
+      flash:
+        'success.%role%': Die Rolle '%role%' wurde hinzugefügt
+    edit:
+      flash:
+        'success.%role%': Die Rolle '%role%' wurde aktualisiert
+    delete:
+      flash:
+        'success.%role%': Die Rolle '%role%' wurde gelöscht
+
+  users:
+    adminlist:
+      filter:
+        username: Benutzername
+        email: E-Mail
+        enabled: aktiviert
+
+      header:
+        username: Benutzername
+        email: E-Mail
+        enabled: aktiviert
+        last_login: letzter Login
+        groups: Gruppe(n)
+
+      add:
+        flash:
+          'success.%username%': Der Benutzer '%username%' wurde erstellt
+      edit:
+        flash:
+          'success.%username%': Der Benutzer '%username%' wurde aktualisiert
+      delete:
+        flash:
+          'success.%username%': Der Benutzer '%username%' wurde gelöscht
+
+  group:
+    adminlist:
+      filter:
+        name: Name
+
+      header:
+        name: Name
+        roles: Rollen
+
+  role:
+    adminlist:
+      filter:
+        role: Rolle
+
+      header:
+        role: Rolle
+
+kuma_admin:
+  flash:
+    'deleted_success.%medianame%': Die Datei %medianame% wurde gelöscht
+
+  flash_type:
+    success: Erfolgreich
+    warning: Warnung
+    info: Hinweis
+
+  dashboard:
+    configuration:
+      title:
+        label: Bezeichnung
+      content:
+        label: Inhalt (HTML)
+
+  edit:
+    flash:
+      success: Die Willkommen-Seite wurde bearbeitet.
+
+  password_check:
+    flash:
+      error: Ihr Passwort wurde noch nicht geändert.
+
+  ga_ajax_controller:
+    flash:
+      success: Erfolgreich gespeichert.
+
+  media:
+    flash:
+      'deleted_success.%medianame%': Der Eintrag '%medianame%' wurde gelöscht.
+      drop_success: Die Datei wurde erfolgreich hochgeladen.
+      drop_unrecognized: Der Dateityp konnte nicht ermittelt werden.
+
+translator:
+  translator:
+    title: Übersetzungen
+    inline_edit_title: Übersetzung einfügen
+    emptytext: Nicht übersetzt
+    invalid_translation: Ungültige Übersetzung!
+    fatal_error_occurred: Während des Speicherns ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.
+  translations: Übersetzungen
+  translation_not_unique: Die Übersetzung sollte eindeutig sein.
+
+kuma_translator:
+  clear:
+    flash:
+      success: Alle Übersetzungen wurden aktualisiert.
+  adminlist:
+    filter:
+      domain: Domain
+      keyword: Schlüsselwort
+      text: Text
+      locale: Sprache
+
+    header:
+      domain: Domain
+      keyword: Schlüsselwort
+
+  command:
+    clear:
+      flash:
+        success: Alle Übersetzungen wurden aktualisiert.
+
+    import:
+      flash:
+        success:        Die Übersetzungen  wurden erfolgreich importiert. Keine bereits importierten Übersetzungen wurden überschrieben.
+        force_success:  Die Übersetzungen wurden erfolgreich importiert. Bereits importierte Übersetzungen wurden überschrieben.
+
+  modal:
+    confirmation:
+      force_import:
+        title: Sind Sie sicher, dass der Import durchgeführt werden soll?
+        body: Alle bereits importierten Übersetzungen werden überschrieben.
+        confirm_button: Import durchführen
+        cancel_button: abbrechen
+
+redirect:
+  title: "Umleitungen / Weiterleitungen"
+
+  origin_info: "Geben Sie hier die Quell-URL in absoluter Schreibweise an, z.B.: /alte/url"
+  target_info: "Geben Sie hier die Ziel-URL in absoluter Schreibweise an, z.B.: /neue/url"
+
+  adminlist:
+    filter:
+      origin: Quelle
+      target: Ziel
+      permanent: permanent?
+
+    header:
+      origin: Quelle
+      target: Ziel
+      permanent: permanent?
+
+  form:
+    redirect:
+      origin:
+        label: Quelle
+      target:
+        label: Ziel
+      permanent:
+        label: permanent?
+
+settings:
+  groups: Gruppen
+  group:
+    name: Name
+    edit: bearbeiten
+    add: erstellen
+    roles: Rollen
+
+  users: Benutzer
+  user:
+    username: Benutzername
+    password: Passwort
+    repeatedpassword: Passwort wiederholen
+    adminlang: Sprache der Admin-Oberfläche
+    email: E-Mail
+    enabled: aktiv?
+    roles: Gruppen
+    add: erstellen
+    edit: bearbeiten
+
+  roles: Rollen
+  role:
+    role: Rolle
+    add: hinzufügen
+    edit: bearbeiten
+
+
+  translator:
+    add: hinzufügen
+    edit: bearbeiten
+    refresh_live: aktualisieren
+    import_translations: importieren
+    import_translations_forced: importieren und überschreiben
+    not_live_warning: "Die Übersetzungen sind nicht aktuell. Bitte klicken Sie auf 'aktualisieren'."
+    choose_language: "Sprache auswählen"
+    succesful_added: "Übersetzung wurde erfolgreich hinzugefügt"
+    succesful_edited: "Übersetzung wurde erfolgreich bearbeitet"
+
+mediapagepart:
+  download:
+    choosefile: 'Datei auswählen'
+
+  image:
+    choosefile: 'Bild auswählen'
+    alttext: 'Alternativer Text'
+    link: 'Link auswählen'
+    openinnewwindow: 'Link in neuem Fenster öffnen?'
+
+  slide:
+    choose: 'Präsentation auswählen'
+
+  video:
+    choose: 'Video auswählen'
+
+  audio:
+    choose: 'Audio auswählen'
