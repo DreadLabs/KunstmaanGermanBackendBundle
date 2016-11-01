@@ -299,6 +299,7 @@ seo:
         label: Meta-Beschreibung
       meta_robots:
         label: Meta-Robots
+        placeholder: Robot-Tags auswählen
       extra_metadata:
         label: Extra Meta-Daten
 
@@ -320,16 +321,18 @@ seo:
       creatorhandle_info_text: Geben Sie hier den @-Twitter-Handle des Autors an
       image: Bild
 
+    robots:
+      noindex: nicht in Index aufnehmen
+      nofollow: Links nicht verfolgen
+      noarchive: nicht in den Cache aufnehmen
+      nosnippet: Snippet / Ausschnit nicht anzeigen
+      notranslate: keine Übersetzung anbieten
+      noimageindex: Bilder nicht in den Index aufnehmen
+
   robots:
     tip: "Tipp:"
     warning: "Dies ist ein Standardwert / Beispiel. Es wurde noch keine benutzerdefinierte robot.txt erstellt."
     moreinfo: "Erhalten Sie mehr Informationen in unserem Cookbook:"
-    noindex: nicht in Index aufnehmen
-    nofollow: Links nicht verfolgen
-    noarchive: nicht in den Cache aufnehmen
-    nosnippet: Snippet / Ausschnit nicht anzeigen
-    notranslate: keine Übersetzung anbieten
-    noimageindex: Bilder nicht in den Index aufnehmen
 
 region:
   button:
@@ -653,3 +656,12 @@ mediapagepart:
 
   audio:
     choose: 'Audio auswählen'
+
+permissions:
+  you_made_changes: Es wurden Änderungen an den Zugriffsrechten dieser Seite durchgeführt
+  apply_recursively: Zugriffsregeln rekursiv auf alle Kindseiten anwenden
+  review_changes: Änderungen überprüfen
+  changes: Zugriffsrechte ändern
+  permissions_added: 'Die folgende Zugriffsrechte werden <strong>hinzugefügt</strong>:'
+  permissions_removed: 'Die folgenden Zugriffsrechte werden <strong>entfernt</strong>:'
+  role_name: Rolle
