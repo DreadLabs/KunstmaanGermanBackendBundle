@@ -24,6 +24,8 @@ Search: Suche
 'Vote up': gefällt mir
 'Vote down': gefällt mir nicht
 'Vote registered': Die Bewertung wurde gespeichert.
+folder: Verzeichnis
+Folder: Verzeichnis
 
 subaction:
   versions: "Versionen"
@@ -438,6 +440,8 @@ media:
         label: Copyright
       description:
         label: Beschreibung
+      originalFilename:
+        label: Original Dateiname
 
   widget:
     media_chooser: Datei auswählen
