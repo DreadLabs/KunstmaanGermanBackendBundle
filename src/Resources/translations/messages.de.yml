@@ -443,6 +443,28 @@ media:
       originalFilename:
         label: Original Dateiname
 
+    remote:
+      name:
+        label: Bezeichnung
+      code:
+        label: ID / Code der Datei
+      copyright:
+        label: Copyright
+      description:
+        label: Beschreibung
+
+    remote_audio:
+      type:
+        label: Typ / Portal
+
+    remote_video:
+      type:
+        label: Typ / Portal
+
+    remote_slide:
+      type:
+        label: Typ / Portal
+
   widget:
     media_chooser: Datei auswählen
     choose: auswählen
