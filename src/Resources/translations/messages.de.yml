@@ -29,12 +29,19 @@ Folder: Verzeichnis
 
 Role: Rolle
 'Add role': Rolle hinzufügen
+'Edit role': Rolle bearbeiten
 
 Group: Gruppe
 'Add group': Gruppe hinzufügen
+'Edit group': Gruppe bearbeiten
 
 User: Benutzer
 'Add user': Benutzer hinzufügen
+'Edit user': Benutzer bearbeiten
+
+Translation: Übersetzung
+'Add translation': Übersetzung hinzufügen
+'Edit translation': Übersetzung bearbeiten
 
 subaction:
   versions: "Versionen"
@@ -372,11 +379,11 @@ media:
     sortby: sortieren nach
 
     addsub:
-      action: Unterverzeichnis erstellen
-      action_short: erstellen
+      action: Unterverzeichnis anlegen
+      action_short: speichern
       modal:
-        title: Unterverzeichnis erstellen
-        save: erstellen
+        title: Unterverzeichnis anlegen
+        save: speichern
       form:
         name: Ordnername
         rel: Typ
@@ -406,31 +413,30 @@ media:
     upload_finished: Upload abgeschlossen.
     not_available: Der Massen-Upload ist nicht verfügbar. Ihr Browser unterstützt kein Flash, Silverlight oder HTML5.
 
-
   file:
     add: Datei hinzufügen
     modal:
       title: Datei hinzufügen
-      save: hinzufügen
+      save: speichern
   slide:
     add: Folie hinzufügen
     modal:
       title: Folie hinzufügen
-      save: hinzufügen
+      save: speichern
   video:
     add: Video hinzufügen
     modal:
       title: Video hinzufügen
-      save: hinzufügen
+      save: speichern
   audio:
     add: Audiodatei hinzufügen
     modal:
-      title: Audio hinzufügen
-      save: hinzufügen
+      title: Audiodatei hinzufügen
+      save: speichern
 
   media:
     add:
-      action: Datei hinzufügen
+      action: Hinzufügen…
 
     dnd:
       tip: "Tipp:"
@@ -639,8 +645,8 @@ settings:
   groups: Gruppen
   group:
     name: Name
-    edit: bearbeiten
-    add: erstellen
+    edit: speichern
+    add: hinzufügen
     roles: Rollen
     roles_placeholder: Rolle(n) wählen
 
@@ -653,20 +659,20 @@ settings:
     email: E-Mail
     enabled: aktiv?
     roles: Gruppen
-    add: erstellen
-    edit: bearbeiten
+    add: hinzufügen
+    edit: speichern
     roles_placeholder: Gruppe(n) wählen
 
   roles: Rollen
   role:
     role: Rolle
     add: hinzufügen
-    edit: bearbeiten
+    edit: speichern
 
 
   translator:
     add: hinzufügen
-    edit: bearbeiten
+    edit: speichern
     refresh_live: aktualisieren
     import_translations: importieren
     import_translations_forced: importieren und überschreiben
