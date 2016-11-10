@@ -27,6 +27,15 @@ Search: Suche
 folder: Verzeichnis
 Folder: Verzeichnis
 
+Role: Rolle
+'Add role': Rolle hinzufügen
+
+Group: Gruppe
+'Add group': Gruppe hinzufügen
+
+User: Benutzer
+'Add user': Benutzer hinzufügen
+
 subaction:
   versions: "Versionen"
 
@@ -496,15 +505,15 @@ kuma_user:
         last_login: letzter Login
         groups: Gruppe(n)
 
-      add:
-        flash:
-          'success.%username%': Der Benutzer '%username%' wurde erstellt
-      edit:
-        flash:
-          'success.%username%': Der Benutzer '%username%' wurde aktualisiert
-      delete:
-        flash:
-          'success.%username%': Der Benutzer '%username%' wurde gelöscht
+    add:
+      flash:
+        'success.%username%': Der Benutzer '%username%' wurde erstellt
+    edit:
+      flash:
+        'success.%username%': Der Benutzer '%username%' wurde aktualisiert
+    delete:
+      flash:
+        'success.%username%': Der Benutzer '%username%' wurde gelöscht
 
   group:
     adminlist:
@@ -633,6 +642,7 @@ settings:
     edit: bearbeiten
     add: erstellen
     roles: Rollen
+    roles_placeholder: Rolle(n) wählen
 
   users: Benutzer
   user:
@@ -645,6 +655,7 @@ settings:
     roles: Gruppen
     add: erstellen
     edit: bearbeiten
+    roles_placeholder: Gruppe(n) wählen
 
   roles: Rollen
   role:
