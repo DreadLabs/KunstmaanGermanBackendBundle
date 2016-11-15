@@ -43,6 +43,10 @@ Translation: Übersetzung
 'Add translation': Übersetzung hinzufügen
 'Edit translation': Übersetzung bearbeiten
 
+Menus: Menüs
+'Menu Item': Menü-Eintrag
+'Menu items': Menü-Einträge
+
 subaction:
   versions: "Versionen"
 
@@ -58,10 +62,10 @@ action:
   duplicate: "duplizieren"
 
 modal:
-  sourcelanguage: "Ausgangssprache"
+    sourcelanguage: "Ausgangssprache"
 
 pages:
-  copynotavailable: "Bitte übersetzen Sie erst die übergeordnete Seite"
+    copynotavailable: "Bitte übersetzen Sie erst die übergeordnete Seite"
 
 kuma_node:
   form:
@@ -708,3 +712,39 @@ permissions:
   permissions_added: 'Die folgende Zugriffsrechte werden <strong>hinzugefügt</strong>:'
   permissions_removed: 'Die folgenden Zugriffsrechte werden <strong>entfernt</strong>:'
   role_name: Rolle
+
+kuma_menu:
+  menu:
+    adminlist:
+      filter:
+        name: Menü-Bezeichnung
+      field:
+        name: Menü-Bezeichnung
+
+  menu_item:
+    adminlist:
+      breadcrumb:
+        modules: Module
+        menu: Menüs
+        menu_items: Menü-Einträge
+
+      title: "Menü-Einträge für %name% und Sprache %locale%"
+      online: online
+      offline: offline
+
+      field:
+        title: Bezeichnung
+        online: online?
+        type: Typ
+        url: URL
+        new_window: im neuen Fenster öffnen?
+
+  form:
+    parent: übergeordneter Menü-Eintrag
+    parent_placeholder: übergeordneten Menü-Eintrag auswählen…
+    type: Typ
+    node_translation: Seite
+    node_translation_placeholder: Seite auswählen…
+    title: Titel
+    url: URL
+    new_window: im neuen Fenster öffnen?
